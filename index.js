@@ -67,3 +67,6 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${grandTotal}, which will be charged to the card ${cardNumber}.`;
   }
 }
+
+placeorder();
+
