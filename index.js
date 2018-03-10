@@ -61,7 +61,7 @@ function placeOrder(cardNumber) {
   console.log(cardNumber);
   console.log(typeof cardNumber);
   console.log(! cardNumber);
-  if (! cardNumber) {
+  if (typeof cardNumber === "undefined") {
     console.log("Sorry, we don't have a credit card on file for you.");
     return "Sorry, we don't have a credit card on file for you.";
   } else {
