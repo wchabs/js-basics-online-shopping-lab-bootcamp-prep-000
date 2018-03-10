@@ -70,6 +70,5 @@ function placeOrder(cardNumber) {
 }
 
 placeOrder();
-typeof cardNumber;
 
 
