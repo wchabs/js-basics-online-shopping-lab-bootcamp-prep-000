@@ -63,6 +63,7 @@ function placeOrder(cardNumber) {
   console.log(! cardNumber);
   if (! cardNumber) {
     console.log("Sorry, we don't have a credit card on file for you.");
+    return "Sorry, we don't have a credit card on file for you.";
   } else {
     var grandTotal = total();
     cart = [];
