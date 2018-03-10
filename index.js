@@ -45,11 +45,15 @@ function total() {
 }
 
 function removeFromCart(item) {
+  cartOrig = cart;
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       cart.splice(i, 1);
       return cart;
     }
+  }
+  if (cartOrig === cart) {
+    return "The item is not in your cart.";
   }
 }
 
