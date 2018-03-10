@@ -26,7 +26,7 @@ function viewCart() {
     } else {
       for (var i = 0; i < cart.length; i++) {
         if (i === cart.length - 1) {
-          report = `${report} and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+          report = `${report.slice(0, -1)} and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
           return report;
         } else {
           report = `${report} ${cart[i].itemName} at $${cart[i].itemPrice},`;
